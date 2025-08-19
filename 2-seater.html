@@ -1,0 +1,1042 @@
+<!DOCKTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="pages.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" rel="stylesheet">
+        <!-- jQuery and Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <style>
+            /*.str {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                color: #000000;
+                text-transform: uppercase;
+            }
+
+
+            .mycart>div{
+                margin-top: 130px;
+            }
+
+            .img-thumbnail {
+                width: 38%;
+            }
+
+            .pay {
+                display: flex;
+                text-align: end;
+                justify-content: space-between;
+            }
+
+
+            .pay h6 {
+               font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                font-weight: 600;
+                text-transform: capitalize;
+                margin-bottom: 30px;  
+            }
+
+            .pay h6 span {
+                color: #ff7004;
+            }
+
+            .pay p {
+              font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: capitalize;  
+            }
+
+            .pay p span {
+                color: #ff7004;
+            }
+
+
+            .input-group-text {
+                border: 1px solid #000000;
+            }
+
+            .input-group-text i {
+                font-size: 20px;
+
+            }
+
+            .input-group input {
+                border: 1px solid #000000;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            .cart-check-btn {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border: none;
+                padding: 0 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                background-color: #ff7004;
+                color: #fff;
+            }
+
+            .cart-check-btn:hover {
+                background-color: #000000;
+            }
+
+            .form-control:focus {
+                border-color: unset;
+            }
+
+
+            .mycart h5 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 26px;
+                font-weight: 700;
+                color: #000000;
+                text-transform: uppercase;
+            }
+
+            .text-muted,
+            .qty {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                color: #000000;
+                text-transform: capitalize;
+            }
+
+            .btn-minus,
+            .btn-plus {
+                font-size: 20px;
+                padding: 5px 10px;
+            }
+
+            #qtyInput {
+                font-size: 20px;
+                border-top: 2px solid #000000;
+                border-bottom: 2px solid #000000;
+            }
+
+            .prize {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+            }
+
+            .Discount {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #ff7004;
+            }
+
+            .remove a {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #161616;
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            .remove i {
+                font-size: 20px;
+                color: red;
+            }
+
+            .summer {
+               font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #161616;
+                font-size: 20px;
+                font-weight: 600; 
+            }
+
+            .prized {
+               font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #161616;
+                font-size: 18px;
+                font-weight: 600;  
+            }
+
+           .pdetail {
+              font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #161616;
+                font-size: 18px;
+                font-weight: 600;    
+            }
+
+            .congrates {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #198754;
+                font-size: 16px;
+                font-weight: 600;      
+            }
+
+            .place-order-btn {
+                width: 100%;
+                height: 40px;
+                background-color: #ff7004;
+                color: #fff;
+                border: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                border-radius: 5px;
+                transition: 0.4s;
+            }
+
+            .place-order-btn:hover {
+                background-color: #000000;
+            }*/
+
+
+
+            /*mobile mode*/
+            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                .img-thumbnail {
+                    width: auto;
+                }
+
+                .mycart>div {
+                    margin-top: 100px;
+                }
+
+                .pay {
+                    display: block;
+                    text-align: center;
+                }
+
+                .pay h6 {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+
+                .cart-check-btn {
+                    width: 100%;
+                    border-top-left-radius: 5px !important;
+                    border-bottom-left-radius: 5px !important;
+                    margin-top: 5px;
+                }
+
+                .input-group input {
+                    border-top-right-radius: 5px !important;
+                    border-bottom-right-radius: 5px !important;
+                    font-size: 12px;
+                }
+
+                #qtyInput {
+                    border-radius: 0 !important;
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1280px) {
+
+                .mobile-srh {
+                    margin-top: 90px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <button id="scrollTopBtn" class="btn btn-primary"><i class="bi bi-arrow-up-short"></i></button>
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-lg py-4" style="background-color: rgb(255, 255, 255);">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logoo.png" alt=""></a>
+
+                    <div class="d-flex align-items-center ms-auto d-lg-none">
+                        <a class="log-drop-down" href="#exampleModal1" data-bs-toggle="modal"><i
+                                class="bi bi-person-circle"></i></a>
+                        <a href="cart.html" class="btn-cart-mob  btn-sm me-2">
+                            <i class="bi bi-cart"></i>
+                        </a>
+                        <button class="btn-search-mob  btn-sm me-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mobileSearch">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">sofas</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="2-seater.html">3 seater sofas</a>
+                                    <a class="dropdown-item" href="woodensofa.html">wooden sofas</a>
+                                    <a class="dropdown-item" href="sofacumbed.html">sofa cum beds</a>
+                                    <a class="dropdown-item" href="Lshapesofa.html">l shape sofas</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">bedroom</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="single.html">single bed</a>
+                                    <a class="dropdown-item" href="double.html">double bed</a>
+                                    <a class="dropdown-item" href="double.html">king size bed</a>
+                                    <a class="dropdown-item" href="double.html">queen size bed</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">storage</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="tvunits.html">tv units</a>
+                                    <a class="dropdown-item" href="#">book shelves</a>
+                                    <a class="dropdown-item" href="#">dining</a>
+                                    <a class="dropdown-item" href="#">sofa cum bed</a>
+                                    <a class="dropdown-item" href="#">home furnishing</a>
+                                    <a class="dropdown-item" href="#">coffee table</a>
+                                    <a class="dropdown-item" href="#">home decor</a>
+                                    <a class="dropdown-item" href="#">study table</a>
+                                    <a class="dropdown-item" href="#">lighting</a>
+                                    <a class="dropdown-item" href="#">sale</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Cart and Login Icons for Desktop -->
+                        <div class="d-none d-lg-flex align-items-center">
+                            <a class="log-drop-down" href="#exampleModal1" data-bs-toggle="modal"><i
+                                    class="bi bi-person-circle"> login</i></a>
+                            <a href="cart.html" class="cart-btn btn-sm">
+                                <i class="bi bi-cart"> Cart</i>
+                            </a>
+                        </div>
+
+                        <!-- Search Form for Desktop -->
+                        <form class="d-none d-lg-flex ms-3" role="search">
+                            <input class="nav-search form-control-sm me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="nav-search-btn btn-sm" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Search Form for Mobile -->
+            <div class="mobile-srh">
+                <div class="collapse bg-dark" id="mobileSearch">
+                    <form class="search-form-mobile" role="search">
+                        <input class="mobile-nav-search form-control-sm mb-2 " type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light btn-sm w-100" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Navbar End -->
+        </header>
+        <main>
+            <div class="container-fluid page-1 pt-lg-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mobile-filter d-lg-none">
+                                <div class="d-flex justify-content-between my-3">
+                                    <button class="btn-filter" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                        <i class="bi bi-funnel"></i> filter
+                                    </button>
+
+                                    <button class="btn-sort" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                        <i class="bi bi-filter"></i> sort by :
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Sidebar Filter -->
+                        <div class="d-none d-lg-block col-lg-3 filter-section  mt-4 px-4">
+                            <div class="filter-box">
+                                <h5>Filters</h5>
+                                <hr>
+                                <div class="form-check form-switch mb-3">
+                                    <input class="form-check-input mt-1 fs-5" type="checkbox" id="fastDelivery">
+                                    <label class="form-check-label" for="fastDelivery">Fast Delivery</label>
+                                </div>
+
+                                <h5 class="mb-3">Price Range</h5>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <span id="minPrice">₹6,899</span>
+                                    <span id="maxPrice">₹69,999</span>
+                                </div>
+                                <div id="slider"></div>
+                                <div class="mt-3 d-flex justify-content-between">
+                                    <button class="apply-btn">Apply</button>
+                                    <button class="reset-btn text-decoration-none ">Reset</button>
+                                </div>
+                            </div>
+                            <div class="filter-box-two">
+                                <h4>sofas</h4>
+                                <hr>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li><a href="2-seater.html">3 seater sofas</a></li>
+                                    <li><a href="woodensofa.html">wooden sofas</a></li>
+                                    <li><a href="sofacumbed.html">sofa cum beds</a></li>
+                                    <li><a href="Lshapesofa.html">l shape sofas</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-box-three">
+                                <h4>bedroom</h4>
+                                <hr>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li><a href="single.html">single bed</a></li>
+                                    <li><a href="double.html">double bed</a></li>
+                                    <li><a href="double.html">king size bed</a></li>
+                                    <li><a href="double.html">queen size bed</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-box-four">
+                                <h4>storage</h4>
+                                <hr>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li><a href="tvunits.html">tv units</a></li>
+                                    <li><a href="">book shelves</a></li>
+                                    <li><a href="">dining</a></li>
+                                    <li><a href="">sofa cum bed</a></li>
+                                    <li><a href="">home furnishing</a></li>
+                                    <li><a href="">coffee table</a></li>
+                                    <li><a href="">home decor</a></li>
+                                    <li><a href="">study table</a></li>
+                                    <li><a href="">lighting</a></li>
+                                    <li><a href="">sale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Main Content -->
+                        <div class="col-12 col-lg-9 filter-section-2">
+                            <!-- Sort and View -->
+                            <div class="d-flex justify-content-between align-items-center mt-2 mb-4">
+                                <div class="sortby-lg">
+                                    <label class="sortby me-2">Sort By:</label>
+                                    <select class="form-select-rec d-inline w-auto">
+                                        <option selected>Recommended</option>
+                                        <option>Price: Low to High</option>
+                                        <option>Price: High to Low</option>
+                                    </select>
+                                </div>
+                                <div class="view-as">
+                                    <span class="view fs-4 fw-bold text-capitalize">view as</span>&nbsp;&nbsp;&nbsp;<button
+                                        class="btn btn-outline-secondary" onclick="setColumns(4)"><img
+                                            src="https://www.woodenstreet.com/images/category-new/3-bar.svg"
+                                            alt=""></button>&nbsp;&nbsp;
+                                    <button class="btn btn-outline-secondary" onclick="setColumns(6)"><img
+                                            src="https://www.woodenstreet.com/images/category-new/2-bar.svg"
+                                            alt=""></button>
+                                </div>
+                            </div>
+
+                            <!-- Product Cards -->
+                            <div class="row product-row" id="productRow">
+                                <!-- Card 1 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <span class="badge">Best Seller</span>
+                                    <img src="images/2-seater-img-1.jpg" alt="Product 1" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Feltro Sheesham Wood Sofa Bed</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★★ (708)<h5>2 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <img src="images/2-seater-img-2.jpg" alt="Product 2" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Della Sheesham Wood Sofa</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★★ (385)<h5>5 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <img src="images/2-seater-img-3.jpg" alt="Product 3" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Sereta 3 Seater Sheesham Sofa</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★☆ (864)<h5>4 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+                                <!-- Card 1 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <img src="images/2-seater-img-4.jpg" alt="Product 1" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Feltro Sheesham Wood Sofa Bed</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★★ (708)<h5>3 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <img src="images/2-seater-img-5.jpg" alt="Product 2" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Della Sheesham Wood Sofa</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★★ (385)<h5>2 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <span class="badge">Best Seller</span>
+                                    <img src="images/2-seater-img-6.jpg" alt="Product 3" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Sereta 3 Seater Sheesham Sofa</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★☆ (864)<h5>3 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+                                <!-- Card 1 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <img src="images/2-seater-img-7.jpg" alt="Product 1" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Feltro Sheesham Wood Sofa Bed</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★★ (708)<h5>5 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <span class="badge">Best Seller</span>
+                                    <img src="images/2-seater-img-8.jpg" alt="Product 2" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Della Sheesham Wood Sofa</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★★ (385)<h5>3 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <img src="images/2-seater-img-9.jpg" alt="Product 3" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Sereta 3 Seater Sheesham Sofa</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★☆ (864)<h5>5 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+                                <!-- Card 1 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <img src="images/2-seater-img-10.jpg" alt="Product 1" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Feltro Sheesham Wood Sofa Bed</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★★ (178)<h5>3 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <img src="images/2-seater-img-11.jpg" alt="Product 2" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Della Sheesham Wood Sofa</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★★ (385)<h5>4 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="col-md-4 product-card-page mb-5">
+                                    <span class="badge">Best Seller</span>
+                                    <img src="images/2-seater-img-12.jpg" alt="Product 3" class="img-fluid">
+                                    <a href="cart.html"><button class="product-card-page-btn">add to cart</button></a>
+                                    <h6 class="mt-2">Sereta 3 Seater Sheesham Sofa</h6>
+                                    <h5>by furns</h5>
+                                    <div class="star-rating">★★★★☆ (864)<h5>3 - options</h5>
+                                    </div>
+                                    <hr class="my-1">
+                                    <p class="mb-0">₹13,499 &nbsp<del>₹26,999</del> <span>50% off</span></p>
+                                    <h4>deal prize ₹11,749</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pagin py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <div class="container-fluid footer d-flex align-items-center text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 text-center text-lg-start">
+                            <img src="images/logoo-2.png" alt="">
+                            <p class="my-4">Delivery Across India : Ahmedabad, Bangalore, Bhopal, Chandigarh, Chennai,
+                                Coimbatore, Faridabad, Ghaziabad, Goa, Gurgaon, Hyderabad, Indore, Jaipur.</p>
+                            <div class="socials">
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                            </div>
+                            <div class="footer-cards">
+                                <img src="images/footer-cards.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 offset-lg-1 col-md text-center text-md-start">
+                            <h3>Our Company</h3>
+                            <ul class="p-0 mt-4">
+                                <li><a href="">Living Room</a></li>
+                                <li><a href="">Bedroom</a></li>
+                                <li><a href="">Dining Room</a></li>
+                                <li><a href="">Kids Room</a></li>
+                                <li><a href="">Modular Furniture</a></li>
+                                <li><a href="">Modular Kitchen</a></li>
+                                <li><a href="">Modular Wardrobe</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md text-center text-md-start">
+                            <h3>Useful Links</h3>
+                            <ul class="p-0 mt-4">
+                                <li><a href="">Custom Furniture</a></li>
+                                <li><a href="">Exporters</a></li>
+                                <li><a href="">Hotel Furniture</a></li>
+                                <li><a href="">Delivery Location</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md text-center text-md-start">
+                            <h3>ABOUT</h3>
+                            <ul class="p-0 mt-4">
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Track your order</a></li>
+                                <li><a href="">Ask Expert</a></li>
+                            </ul>
+                        </div>
+                        <hr class="my-4">
+                        <span class="text-center">Copyright 2024 - swarna by Designesia&nbsp;&nbsp;&nbsp;Term &
+                            Conditon-Privacy Policy</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--login modals start here-->
+
+        <!-- Modal1 -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid login">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 p-3"
+                                    style="background: url(images/logoo-2.png) no-repeat  left 15px bottom 46px #ff7004;">
+                                    <h2 class="text-head">Login</h2>
+                                    <p class="textpara-2">Get Access to your Orders, Wishlists and recommendations</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 ms-auto d-flex  flex-column p-5">
+                                    <div class="row mb-5 pb-5">
+                                        <div class="col">
+                                            <form class="row g-3">
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" class="form-control" id="floatingInput"
+                                                        placeholder="name@example.com">
+                                                    <label for="floatingInput">Enter Email/Mobile number</label>
+                                                    <p class="flip-para"><small> By continuing, you agree to furns
+                                                            Terms of Use and Privacy Policy.</small></p>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button class="flip-btn rounded-0" type="button">Request
+                                                        OTP</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center pt-5 mt-5">
+                                            <a href="#exampleModal2" data-bs-toggle="modal">New to furns? Create an
+                                                account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal2 -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid login-2">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 p-3"
+                                    style="background: url(images/logoo-2.png) no-repeat  left 15px bottom 46px #ff7004;">
+                                    <h2 class="text-head">Looks like you're new here!</h2>
+                                    <p class="textpara-2">Sign up with your mobile number to get started</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 ms-auto d-flex  flex-column p-5">
+                                    <div class="row mb-5 pb-5">
+                                        <div class="col">
+                                            <form class="row g-3">
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" class="form-control" id="floatingInput"
+                                                        placeholder="name@example.com">
+                                                    <label for="floatingInput">Enter/Mobile number</label>
+                                                    <p class="flip-para"><small> By continuing, you agree to furns
+                                                            Terms of Use and Privacy Policy.</small></p>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button class="flip-btn rounded-0 text-uppercase"
+                                                        type="button">Continue</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center pt-5 mt-5">
+                                            <a href="#exampleModal1" data-bs-toggle="modal">Existing User? Log in</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--offcanvas right strt here-->
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+            aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Filter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Filter
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input mt-1 fs-5" type="checkbox" id="fastDelivery">
+                                        <label class="form-check-label" for="fastDelivery">Fast Delivery</label>
+                                    </div>
+                                    <div>
+                                        <div class="mb-3">
+                                            <label for="minRange" class="form-label-range">Range: &nbsp;&nbsp;<span
+                                                    id="valueDisplayMin">₹30,000</span></label>
+                                            <input type="range" class="form-range" min="15000" max="200000" step="1000"
+                                                id="minRange" value="15000">
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="fs-4 fw-bold">₹30,000</span>
+                                            <span class="fs-4 fw-bold">₹2,00,000</span>
+                                        </div>
+                                        <div class="mt-3 d-flex justify-content-between">
+                                            <button class="apply-btn">Apply</button>
+                                            <button class="reset-btn text-decoration-none ">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Sofas
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href="2-seater.html"><span>3 seater sofas</span></a>
+                                    <a href=""><span>2 seater sofas</span></a>
+                                    <a href=""><span>1 seater sofas</span></a>
+                                    <a href=""><span>L shape sofas</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    bedroom
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href=""><span>single beds</span></a>
+                                    <a href=""><span>double beds</span></a>
+                                    <a href=""><span>king size beds</span></a>
+                                    <a href=""><span>queen size beds</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapsefour">
+                                    storage
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <a href=""><span>tv units</span></a>
+                                    <a href=""><span>book shelves</span></a>
+                                    <a href=""><span>wardrobs</span></a>
+                                    <a href=""><span>dressing table</span></a>
+                                    <a href=""><span>kitchen cabinet</span></a>
+                                    <a href=""><span>kitchen trolly</span></a>
+                                    <a href=""><span>bar cabinet</span></a>
+                                    <a href=""><span>bar trolly</span></a>
+                                    <a href=""><span>kids wardrobs</span></a>
+                                    <a href=""><span>kids bedside table</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!--offcanvas right end here-->
+
+        <!--offcanvas bottom strt here-->
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-4 fw-bold" id="offcanvasBottomLabel">short by</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+             <div class="offcanvas-body small p-0">
+            <ul class="list-group">
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    prize : low to high
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                     prize : high to low
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    new arrival
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    Discount
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    latest
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    fast shopping
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <!--offcanvas bottom end here-->
+
+        <!--login modals end here-->
+        <!--img 3,3 changer -->
+        <script>
+            function setColumns(columnSize) {
+                const cards = document.querySelectorAll('#productRow .product-card-page');
+                cards.forEach(card => {
+                    card.classList.remove('col-md-4', 'col-md-6');
+                    card.classList.add(`col-md-${columnSize}`);
+                });
+            }
+        </script>
+        <!--img 3,3 changer end -->
+
+
+        <!--cart count increase js -->
+        <!--bottom to top btn code-->
+        <script>
+            let scrollTopBtn = document.getElementById("scrollTopBtn");
+
+            window.onscroll = function () {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    scrollTopBtn.style.display = "block";
+                } else {
+                    scrollTopBtn.style.display = "none";
+                }
+            };
+
+            scrollTopBtn.onclick = function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            };
+        </script>
+
+        <!--price range js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+        <script>
+            const slider = document.getElementById('slider');
+
+            noUiSlider.create(slider, {
+                start: [6899, 69999],
+                connect: true,
+                range: {
+                    'min': 30000,
+                    'max': 200000
+                },
+                step: 100,
+                format: {
+                    to: value => Math.round(value),
+                    from: value => Number(value)
+                }
+            });
+
+            const minPrice = document.getElementById('minPrice');
+            const maxPrice = document.getElementById('maxPrice');
+
+            slider.noUiSlider.on('update', function (values, handle) {
+                const [min, max] = values.map(v => `₹${Number(v).toLocaleString('en-IN')}`);
+                minPrice.innerText = min;
+                maxPrice.innerText = max;
+            });
+        </script>
+
+        <!--range code js-->
+        <script>
+            const minRange = document.getElementById("minRange");
+            const displayMin = document.getElementById("valueDisplayMin");
+
+            minRange.addEventListener("input", function () {
+                displayMin.textContent = "₹" + minRange.value;
+            });
+        </script>
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>

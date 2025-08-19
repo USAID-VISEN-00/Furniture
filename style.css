@@ -1,0 +1,1181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    max-width: 100% !important;
+}
+
+.container {
+    max-width: 1600px !important;
+}
+
+.navbar {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: -2px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 50px;
+}
+
+.mobile-srh {
+    margin-top: 78px;
+}
+
+.navbar-brand img {
+    max-width: 220px !important;
+}
+
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ff7004;
+}
+
+.nav-link:hover {
+    color: #ff7004;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #ff7004;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: var(#ff7004);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+}
+
+.dropdown-item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff7004;
+    text-transform: uppercase;
+}
+
+
+.dropdown-item:hover {
+    color: #fff;
+    background-color: #ff7004;
+}
+
+
+.navbar a {
+    text-decoration: none;
+}
+
+
+.log-drop-down i {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: normal;
+    margin-right: 20px;
+}
+
+
+.cart-btn i {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: normal;
+    margin-right: 20px;
+}
+
+.log-drop-down i:hover,
+.cart-btn i:hover {
+    color: #ff7004;
+}
+
+.nav-search {
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border: 2px solid #ff7004;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-search::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-search-btn {
+    width: 100px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff7004;
+    border: none;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.nav-search-btn:hover {
+    color: #ff7004;
+    background-color: #000000;
+}
+
+/*login code start here*/
+#floatingInput {
+    max-width: 400px;
+    border: 2px solid #000000;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+.form-floating>label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.flip-para {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff7004;
+}
+
+.flip-btn {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #ff7004;
+    padding: 5px 10px;
+    border: none;
+    transition: 0.4s;
+}
+
+.flip-btn:hover {
+    color: #fff;
+    background-color: #050505;
+}
+
+.login a,
+.login-2 a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff7004;
+}
+
+.text-head {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.textpara-2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize
+}
+
+.search i {
+    color: #ff7004;
+    font-size: 25px;
+}
+
+
+.cart ul li {
+    list-style-type: none;
+    margin: 0 0 0 10px;
+}
+
+
+.modal-header h1 {
+    font-family: "poppins", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff7004;
+}
+
+.form-label {
+    font-family: "poppins", serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ff7004;
+}
+
+.form-text,
+.input-group-text {
+    font-family: "poppins", serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff7004;
+}
+
+.form-check-label {
+    font-family: "poppins", serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff7004;
+}
+
+/*login code end here*/
+
+
+/*bottom to top btn code strt here*/
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    background-color: #ff7004;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 10px;
+}
+
+/*navbar code end here*/
+
+
+
+/*carausel code start here*/
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption-1,
+.carousel-caption-2,
+.carousel-caption-3 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translateY(-30%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.carousel-caption-1 {
+    top: 40%;
+    left: 55%;
+    text-align: end;
+}
+
+
+.carousel-caption-1 h2,
+.carousel-caption-2 h2,
+.carousel-caption-3 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: none;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.carousel-caption-1 h3,
+.carousel-caption-2 h3,
+.carousel-caption-3 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff7004;
+    text-shadow: none;
+}
+
+.carousel-caption-1 p,
+.carousel-caption-2 p,
+.carousel-caption-3 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+
+.carausel-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ff7004;
+    border: none;
+    transition: 0.4s;
+}
+
+
+.carausel-btn:hover {
+    background-color: #000000;
+}
+
+
+
+/*carausel code end here*/
+
+/*picks code start here*/
+
+.picks {
+    height: auto;
+    padding: 30px 0;
+}
+
+.picks h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 auto 10px auto;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.picks p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #ff7004;
+    text-transform: capitalize;
+    margin: 0 0 40px 0;
+}
+
+.picks h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+
+/*picks code end here*/
+
+
+/*best-seller code start here*/
+
+.best-seller {
+    height: auto;
+    padding: 40px 0;
+}
+
+.sale-badge {
+    background: #ffffff;
+    color: #ff7004;
+    border: 2px solid #ff7004;
+    padding: 2px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.best-seller h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 auto 30px auto;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.best-seller h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 2px solid #ff7004;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.best-seller p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.best-seller p del {
+    color: #807e7e;
+}
+
+.best-seller p span {
+    color: #ff7004;
+}
+
+.ad-cart {
+    width: 90%;
+    background-color: #ff7004;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.ad-cart:hover {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*best-seller code end here*/
+
+/*fancy code start here*/
+.fancy {
+    height: auto;
+    background: url(images/sofa-bg.webp) no-repeat center/cover, #f6eedf;
+    padding: 50px 0;
+}
+
+.fancy-box {
+    width: 620px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 30px;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+}
+
+.fancy-box h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-weight: 500;
+}
+
+.fancy-box h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-weight: 700;
+}
+
+.fancy h4 span,
+.fancy h2 span {
+    color: #ff7004;
+}
+
+.fancy p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.fancy button {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ff7004;
+    border: none;
+    transition: 0.4s;
+
+}
+
+
+.fancy button:hover {
+    background-color: #000000;
+    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.8);
+}
+
+/*fancy code end here*/
+
+/*popular code start here*/
+.popular {
+    height: auto;
+    padding: 50px 0;
+}
+
+.popular h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 auto 30px auto;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.popular p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #ff7004;
+    text-transform: capitalize;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.popular-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 382px;
+    height: 378px;
+    border: 2px solid #ff7004;
+}
+
+.popular-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.popular-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #ff7004;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.popular-card:hover .popular-btn {
+    opacity: 1;
+}
+
+/*popular code start here*/
+
+/*testimonial code start here*/
+
+.testimonial {
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonial>div {
+    border: 1px solid #ff7004;
+    padding: 20px 0;
+}
+
+
+.testimonial h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 auto 30px auto;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.text-muted {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #ff7004 !important;
+    font-size: 22px;
+}
+
+.testimonial h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #000000 !important;
+    font-size: 30px;
+}
+
+.testimonial-icon {
+    font-size: 2rem;
+    color: #c2a98e;
+}
+
+.testimonial-text {
+    font-style: italic;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.testimonial-card {
+    width: 100%;
+    min-height: 300px;
+    background: transparent !important;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.arrow-btn {
+    border: 2px solid #ff7004;
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+}
+
+/*testimonial code end here*/
+
+/*letter code start here*/
+.letter {
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.letter h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.letter p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ff7004;
+}
+
+.letter input {
+    width: 500px;
+    height: 50px;
+    outline: none;
+    border: 1px solid #c3c2c2;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    padding: 0 10px;
+}
+
+.letter::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    padding: 0 10px;
+}
+
+.letter-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ff7004;
+    padding: 11px 20px;
+    border: none;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+.letter-btn:hover {
+    background-color: #000;
+    color: #ff7004;
+}
+
+/*letter code end here*/
+
+/*toast code strt here*/
+
+ #myToast {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 9999;
+      max-width: 90vw;
+      background-color: #ff7004;
+      color: #fff;
+    }
+    .toast-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+
+
+    /*toast code end here*/
+
+
+/*footer code start here*/
+
+.footer {
+    height: auto;
+    background-color: #333;
+    padding: 50px 0 10px 0;
+}
+
+.footer p {
+    font-family: "poppins", serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.footer-cards img {
+    max-width: 60%;
+}
+
+.footer h3 {
+    font-family: "poppins", serif;
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.footer ul li {
+    list-style-type: none;
+}
+
+.footer ul li a {
+    font-family: "poppins", serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer ul li a:hover {
+    color: #ff7004;
+}
+
+.socials i {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.footer h6 {
+    font-family: "poppins", serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.footer span {
+    font-family: "poppins", serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*footer code end here*/
+
+
+/*tablet mode*/
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .search-form-mobile {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .mobile-srh {
+        margin-top: 90px;
+    }
+
+    /*login code*/
+    .log-drop-down i {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ff7004;
+        font-style: normal;
+        margin: 0 4px;
+        border: 2px solid #ff7004;
+        background-color: unset;
+        padding: 7px 8px;
+        border-radius: 5px;
+    }
+
+    .btn-search-mob {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ff7004;
+        font-style: normal;
+        margin: 0 4px;
+        border: 2px solid #ff7004;
+        background-color: unset;
+        padding: 8px 8px;
+        border-radius: 5px;
+    }
+
+    .btn-cart-mob {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ff7004;
+        font-style: normal;
+        margin: 0 4px;
+        border: 2px solid #ff7004;
+        background-color: unset;
+        padding: 8px 8px;
+        border-radius: 5px;
+    }
+
+    .login>div>div:nth-child(1) {
+        height: 250px;
+    }
+
+    .login-2>div>div:nth-child(1) {
+        height: 300px;
+    }
+
+    .login-2>div>div:nth-child(1) h2 {
+        font-size: 28px;
+    }
+
+    /*login code end*/
+
+
+
+
+    .mobile-nav-search {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #050505;
+        font-size: 18px;
+        outline: none;
+        font-weight: 600;
+    }
+
+    .nav-link {
+        margin: 0;
+    }
+
+    .carousel-caption-1 {
+        text-align: start;
+    }
+
+    .carousel-caption-1 h2,
+    .carousel-caption-2 h2 {
+        font-size: 25px;
+    }
+
+    .carousel-caption-1 h3,
+    .carousel-caption-2 h3 {
+        font-size: 22px;
+    }
+
+    .carousel-caption-1,
+    .carousel-caption-2,
+    .carousel-caption-3 {
+        top: 30%;
+        left: 20%;
+    }
+
+
+    .btn-outline-light {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ff7004;
+        border: 2px solid #ff7004;
+        font-size: 18px;
+    }
+
+    .btn-outline-light:hover {
+        border: 2px solid #000;
+    }
+
+    .popular-card {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 340px;
+    }
+
+    .testimonial {
+        padding: 0 14px;
+    }
+
+    .testimonial>div {
+        border: none;
+    }
+}
+
+
+/*mobile mode*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .navbar-brand img {
+        max-width: 120px !important;
+    }
+
+    .nav-link {
+        margin: 0;
+    }
+
+
+    .navbar-toggler {
+        padding: 2px 3px;
+        border: 2px solid #ff7004;
+    }
+
+
+    /*login code*/
+    .log-drop-down i {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ff7004;
+        font-style: normal;
+        margin: 0 4px;
+        border: 2px solid #ff7004;
+        background-color: unset;
+        padding: 7px 8px;
+        border-radius: 5px;
+    }
+
+    .btn-search-mob {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ff7004;
+        font-style: normal;
+        margin: 0 4px;
+        border: 2px solid #ff7004;
+        background-color: unset;
+        padding: 8px 8px;
+        border-radius: 5px;
+    }
+
+    .btn-cart-mob {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ff7004;
+        font-style: normal;
+        margin: 0 4px;
+        border: 2px solid #ff7004;
+        background-color: unset;
+        padding: 8px 8px;
+        border-radius: 5px;
+    }
+
+    .login>div>div:nth-child(1) {
+        height: 250px;
+    }
+
+    .login-2>div>div:nth-child(1) {
+        height: 300px;
+    }
+
+    .login-2>div>div:nth-child(1) h2 {
+        font-size: 28px;
+    }
+
+    /*login code end*/
+
+    .search-form-mobile {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .mobile-nav-search {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #050505;
+        font-size: 18px;
+        outline: none;
+        font-weight: 600;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    .carousel-caption-1 h2,
+    .carousel-caption-2 h2 {
+        font-size: 25px;
+    }
+
+    .carousel-caption-1 h3,
+    .carousel-caption-2 h3 {
+        font-size: 22px;
+    }
+
+    .carousel-caption-1,
+    .carousel-caption-2,
+    .carousel-caption-3 {
+        top: 30%;
+        left: 20%;
+    }
+
+    .carousel-caption-1 {
+        text-align: start;
+    }
+
+    .btn-outline-light {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ff7004;
+        border: 2px solid #ff7004;
+        font-size: 18px;
+    }
+
+    .btn-outline-light:hover {
+        border: 2px solid #000;
+    }
+
+
+
+    .nav-btn button,
+    .carausel-btn {
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        display: inline-block;
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .carausel-btn {
+        margin-top: 15px;
+    }
+
+
+    .carousel-caption-1 p,
+    .carousel-caption-2 p,
+    .carousel-caption-3 p {
+        display: none;
+    }
+
+
+    .picks {
+        text-align: center;
+    }
+
+    .picks img {
+        max-width: 250px !important;
+    }
+
+    .picks h4 {
+        margin: 15px 0 40px 0;
+    }
+
+    .fancy-box {
+        width: 100%;
+    }
+
+    .popular-card {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 340px;
+    }
+
+    .popular h2 {
+        font-size: 21px;
+    }
+
+    .testimonial {
+        padding: 0 14px;
+    }
+
+    .testimonial>div {
+        border: none;
+    }
+
+    .letter input {
+        width: 100%;
+    }
+
+    .letter-btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /*toast*/
+
+    #myToast {
+        right: 10px;
+        left: 10px;
+      }
+
+}

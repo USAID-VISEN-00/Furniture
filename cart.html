@@ -1,0 +1,638 @@
+<!DOCKTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <!-- jQuery and Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <style>
+            .str {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                color: #000000;
+                text-transform: uppercase;
+            }
+
+
+            .mycart>div{
+                margin-top: 130px;
+            }
+
+            .img-thumbnail {
+                width: 38%;
+            }
+
+            .pay {
+                display: flex;
+                text-align: end;
+                justify-content: space-between;
+            }
+
+
+            .pay h6 {
+               font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                font-weight: 600;
+                text-transform: capitalize;
+                margin-bottom: 30px;  
+            }
+
+            .pay h6 span {
+                color: #ff7004;
+            }
+
+            .pay p {
+              font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: capitalize;  
+            }
+
+            .pay p span {
+                color: #ff7004;
+            }
+
+
+            .input-group-text {
+                border: 1px solid #000000;
+            }
+
+            .input-group-text i {
+                font-size: 20px;
+
+            }
+
+            .input-group input {
+                border: 1px solid #000000;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            .cart-check-btn {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border: none;
+                padding: 0 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                background-color: #ff7004;
+                color: #fff;
+            }
+
+            .cart-check-btn:hover {
+                background-color: #000000;
+            }
+
+            .form-control:focus {
+                border-color: unset;
+            }
+
+
+            .mycart h5 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 26px;
+                font-weight: 700;
+                color: #000000;
+                text-transform: uppercase;
+            }
+
+            .text-muted,
+            .qty {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                color: #000000;
+                text-transform: capitalize;
+            }
+
+            .btn-minus,
+            .btn-plus {
+                font-size: 20px;
+                padding: 5px 10px;
+            }
+
+            #qtyInput {
+                font-size: 20px;
+                border-top: 2px solid #000000;
+                border-bottom: 2px solid #000000;
+            }
+
+            .prize {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+            }
+
+            .Discount {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #ff7004;
+            }
+
+            .remove a {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #161616;
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            .remove i {
+                font-size: 20px;
+                color: red;
+            }
+
+            .summer {
+               font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #161616;
+                font-size: 20px;
+                font-weight: 600; 
+            }
+
+            .prized {
+               font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #161616;
+                font-size: 18px;
+                font-weight: 600;  
+            }
+
+           .pdetail {
+              font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #161616;
+                font-size: 18px;
+                font-weight: 600;    
+            }
+
+            .congrates {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                text-transform: capitalize;
+                color: #198754;
+                font-size: 16px;
+                font-weight: 600;      
+            }
+
+            .place-order-btn {
+                width: 100%;
+                height: 40px;
+                background-color: #ff7004;
+                color: #fff;
+                border: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                border-radius: 5px;
+                transition: 0.4s;
+            }
+
+            .place-order-btn:hover {
+                background-color: #000000;
+            }
+
+
+
+            /*mobile mode*/
+            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                .img-thumbnail {
+                    width: auto;
+                }
+
+                .mycart>div{
+                margin-top: 100px;
+            }
+
+                .pay {
+                    display: block;
+                    text-align: center;
+                }
+
+                .pay h6 {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+
+                .cart-check-btn {
+                    width: 100%;
+                    border-top-left-radius: 5px !important;
+                    border-bottom-left-radius: 5px !important;
+                    margin-top: 5px;
+                }
+
+                .input-group input {
+                    border-top-right-radius: 5px !important;
+                    border-bottom-right-radius: 5px !important;
+                    font-size: 12px;
+                }
+
+                #qtyInput {
+                    border-radius: 0 !important;
+                }
+            }
+
+                @media only screen and (min-width: 768px) and (max-width: 1280px) {
+
+                 .mobile-srh{
+                margin-top: 90px;
+            }
+             }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <button id="scrollTopBtn" class="btn btn-primary"><i class="bi bi-arrow-up-short"></i></button>
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-lg py-4" style="background-color: rgb(255, 255, 255);">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logoo.png" alt=""></a>
+
+                    <div class="d-flex align-items-center ms-auto d-lg-none">
+                        <a class="log-drop-down" href="#exampleModal1" data-bs-toggle="modal"><i
+                                class="bi bi-person-circle"></i></a>
+                        <a href="#" class="btn-cart-mob  btn-sm me-2">
+                            <i class="bi bi-cart"></i>
+                        </a>
+                        <button class="btn-search-mob  btn-sm me-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mobileSearch">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">sofas</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="2-seater.html">3 seater sofas</a>
+                                    <a class="dropdown-item" href="woodensofa.html">wooden sofas</a>
+                                    <a class="dropdown-item" href="sofacumbed.html">sofa cum beds</a>
+                                    <a class="dropdown-item" href="Lshapesofa.html">l shape sofas</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">bedroom</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="single.html">single bed</a>
+                                    <a class="dropdown-item" href="double.html">double bed</a>
+                                    <a class="dropdown-item" href="double.html">king size bed</a>
+                                    <a class="dropdown-item" href="double.html">queen size bed</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">storage</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="tvunits.html">tv units</a>
+                                    <a class="dropdown-item" href="#">book shelves</a>
+                                    <a class="dropdown-item" href="#">dining</a>
+                                    <a class="dropdown-item" href="#">sofa cum bed</a>
+                                    <a class="dropdown-item" href="#">home furnishing</a>
+                                    <a class="dropdown-item" href="#">coffee table</a>
+                                    <a class="dropdown-item" href="#">home decor</a>
+                                    <a class="dropdown-item" href="#">study table</a>
+                                    <a class="dropdown-item" href="#">lighting</a>
+                                    <a class="dropdown-item" href="#">sale</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Cart and Login Icons for Desktop -->
+                        <div class="d-none d-lg-flex align-items-center">
+                            <a class="log-drop-down" href="#exampleModal1" data-bs-toggle="modal"><i
+                                    class="bi bi-person-circle"> login</i></a>
+                            <a href="#" class="cart-btn btn-sm">
+                                <i class="bi bi-cart"> Cart</i>
+                            </a>
+                        </div>
+
+                        <!-- Search Form for Desktop -->
+                        <form class="d-none d-lg-flex ms-3" role="search">
+                            <input class="nav-search form-control-sm me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="nav-search-btn btn-sm" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Search Form for Mobile -->
+            <div class="mobile-srh">
+         <div class="collapse bg-dark" id="mobileSearch">
+            <form class="search-form-mobile" role="search">
+                <input class="mobile-nav-search form-control-sm mb-2 " type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-light btn-sm w-100" type="submit">Search</button>
+            </form>
+        </div>
+       </div>
+            <!-- Navbar End -->
+        </header>
+        <main>
+            <div class="container-fluid mycart">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="pay">
+                                <h6><span>cart </span>------- address ------- payment</h6>
+                                <p>Have Questions? We're here to help<br><span>Call : +91-9314444747</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Cart Items -->
+                        <div class="col-lg-8 mb-4">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <strong class="str">My Cart (1)</strong>
+                                    <div class="input-group w-50">
+                                        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                                        <input type="text" class="form-control" placeholder="Enter Pincode Here">
+                                        <button class="cart-check-btn">Check</button>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column flex-md-row">
+                                    <img src="images/arrival-2.webp" alt="" class="img-thumbnail me-md-4 mb-3 mb-md-0"
+                                        class="img-fluid">
+                                    <div class="flex-grow-1">
+                                        <h5>Dining Table</h5>
+                                        <p class="text-muted">(Walnut Finish)</p>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <label class="qty me-2">Qty.</label>
+                                            <div class="input-group input-group-sm w-auto">
+                                                <button class="btn-minus btn-outline-secondary"
+                                                    onclick="updateQty(-1)">-</button>
+                                                <input id="qtyInput" type="text" class="form-control text-center"
+                                                    value="1" readonly>
+                                                <button class="btn-plus btn-outline-secondary"
+                                                    onclick="updateQty(1)">+</button>
+                                            </div>
+                                        </div>
+                                        <p class="prize mb-1 fs-3 fw-bold">₹17,599 <span
+                                                class="Discount text-decoration-line-through fs-4 mx-2">₹2,486</span>
+                                            <span class="text-success">20% OFF</span>
+                                        </p>
+                                        <p class="text-success fs-5"><i class="bi bi-tag-fill"></i> Coupon Applied –
+                                            You've
+                                            Saved ₹720 On This Order!</p>
+                                        <div class="remove">
+                                            <a href="#" class="me-3"><i class="bi bi-heart"></i> Save For Later</a>
+                                            <a href="#"><i class="bi bi-trash"></i> Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Summary -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header bg-light">
+                                    <strong class="summer">summer 25% Sale Applied</strong>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="prized">Price Detail (1 Item)</h6>
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span class="pdetail">MRP</span>
+                                            <span class="pdetail">₹17,599</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span class="pdetail">Discount</span>
+                                            <span class="text-success fs-5">– ₹887</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span class="pdetail">Coupon (SUMMER25)</span>
+                                            <span class="text-success fs-5">– ₹720</span>
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex justify-content-between fw-bold mb-2">
+                                        <span class="fs-4 fw-bold">Total Payable</span>
+                                        <span class="fs-4 fw-bold">₹15,992</span>
+                                    </div>
+                                    <small class="text-muted d-block mb-2">Inclusive of all taxes</small>
+                                    <p class="congrates">Congratulations! You've Just Saved ₹887 On Your Order.</p>
+                                    <a href="placeorder.html"><button class="place-order-btn">PLACE ORDER</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+            <div class="container-fluid footer d-flex align-items-center text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 text-center text-lg-start">
+                            <img src="images/logoo-2.png" alt="">
+                            <p class="my-4">Delivery Across India : Ahmedabad, Bangalore, Bhopal, Chandigarh, Chennai,
+                                Coimbatore, Faridabad, Ghaziabad, Goa, Gurgaon, Hyderabad, Indore, Jaipur.</p>
+                            <div class="socials">
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                            </div>
+                            <div class="footer-cards">
+                                <img src="images/footer-cards.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 offset-lg-1 col-md text-center text-md-start">
+                            <h3>Our Company</h3>
+                            <ul class="p-0 mt-4">
+                                <li><a href="">Living Room</a></li>
+                                <li><a href="">Bedroom</a></li>
+                                <li><a href="">Dining Room</a></li>
+                                <li><a href="">Kids Room</a></li>
+                                <li><a href="">Modular Furniture</a></li>
+                                <li><a href="">Modular Kitchen</a></li>
+                                <li><a href="">Modular Wardrobe</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md text-center text-md-start">
+                            <h3>Shop By Room</h3>
+                            <ul class="p-0 mt-4">
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Media</a></li>
+                                <li><a href="">Carrier</a></li>
+                                <li><a href="">Our Store</a></li>
+                                <li><a href="">Customer Stories</a></li>
+                                <li><a href="">Invester Relation</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md text-center text-md-start">
+                            <h3>Useful Links</h3>
+                            <ul class="p-0 mt-4">
+                                <li><a href="">Custom Furniture</a></li>
+                                <li><a href="">Exporters</a></li>
+                                <li><a href="">Hotel Furniture</a></li>
+                                <li><a href="">Delivery Location</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md text-center text-md-start">
+                            <h3>ABOUT</h3>
+                            <ul class="p-0 mt-4">
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Track your order</a></li>
+                                <li><a href="">Ask Expert</a></li>
+                            </ul>
+                        </div>
+                        <hr class="my-4">
+                        <span class="text-center">Copyright 2024 - swarna by Designesia&nbsp;&nbsp;&nbsp;Term &
+                            Conditon-Privacy Policy</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--login modals start here-->
+
+        <!-- Modal1 -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid login">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 p-3"
+                                    style="background: url(images/logoo-2.png) no-repeat  left 15px bottom 46px #ff7004;">
+                                    <h2 class="text-head">Login</h2>
+                                    <p class="textpara-2">Get Access to your Orders, Wishlists and recommendations</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 ms-auto d-flex  flex-column p-5">
+                                    <div class="row mb-5 pb-5">
+                                        <div class="col">
+                                            <form class="row g-3">
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" class="form-control" id="floatingInput"
+                                                        placeholder="name@example.com">
+                                                    <label for="floatingInput">Enter Email/Mobile number</label>
+                                                    <p class="flip-para"><small> By continuing, you agree to furns
+                                                            Terms of Use and Privacy Policy.</small></p>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button class="flip-btn rounded-0" type="button">Request
+                                                        OTP</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center pt-5 mt-5">
+                                            <a href="#exampleModal2" data-bs-toggle="modal">New to furns? Create an
+                                                account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal2 -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid login-2">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 p-3"
+                                    style="background: url(images/logoo-2.png) no-repeat  left 15px bottom 46px #ff7004;">
+                                    <h2 class="text-head">Looks like you're new here!</h2>
+                                    <p class="textpara-2">Sign up with your mobile number to get started</p>
+                                </div>
+                                <div class="col-lg-6 col-md-12 ms-auto d-flex  flex-column p-5">
+                                    <div class="row mb-5 pb-5">
+                                        <div class="col">
+                                            <form class="row g-3">
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" class="form-control" id="floatingInput"
+                                                        placeholder="name@example.com">
+                                                    <label for="floatingInput">Enter/Mobile number</label>
+                                                    <p class="flip-para"><small> By continuing, you agree to furns
+                                                            Terms of Use and Privacy Policy.</small></p>
+                                                </div>
+                                                <div class="d-grid">
+                                                    <button class="flip-btn rounded-0 text-uppercase"
+                                                        type="button">Continue</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center pt-5 mt-5">
+                                            <a href="#exampleModal1" data-bs-toggle="modal">Existing User? Log in</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--login modals end here-->
+
+        <!--cart count increase js -->
+        <script>
+            function updateQty(change) {
+                const qtyInput = document.getElementById('qtyInput');
+                let currentQty = parseInt(qtyInput.value);
+                currentQty = isNaN(currentQty) ? 1 : currentQty + change;
+                if (currentQty < 1) currentQty = 1;
+                qtyInput.value = currentQty;
+            }
+        </script>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
